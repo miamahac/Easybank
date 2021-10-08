@@ -5,11 +5,17 @@ body {
 }
 
 h1 {
-    /* font-size: 3.5rem; */
+    font-size: 3rem;
     color: #2d314c;
 }
 
-p, h6 {
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p,
+h6 {
     color: #9a999f;
     font-weight: 300;
 }
@@ -17,17 +23,18 @@ p, h6 {
 header {
     padding: 8% 0;
 }
+
 footer {
     padding: 3% 0;
 }
 
 /* Buttons */
 .btn-invite {
-    background: linear-gradient(90deg,#33cf6a, #25b6d3);
+    background: linear-gradient(90deg, #33cf6a, #25b6d3);
     border-radius: 25px;
     color: #fff;
     padding: 10px 30px;
-    
+
 }
 
 /* Navigation */
@@ -37,7 +44,7 @@ footer {
 }
 
 .nav-link {
-    color:#9a999f;
+    color: #9a999f;
 }
 
 .navbar {
@@ -46,23 +53,19 @@ footer {
 }
 
 /* Images */
-.bg-blue-img {
+.ill1 {
     position: absolute;
-    width: 90%;
-    height: auto;
-    background-image: url("/images/bg-intro-desktop.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-     background-position: 75% 50%; 
-    overflow-x: hidden;
+    right: -18%;
+    top: -25%;
+    width: 70%;
+    z-index: -1;
 }
 
-.mobile-mockup {
-    position: relative;
-    margin-top: -20%;
+.ill2 {
+    position: absolute;
+    right: -7%;
+    top: 0;
     width: 40%;
-     margin-right: -50%; 
-   
 }
 
 .easybank-icons {
@@ -75,9 +78,7 @@ footer {
     object-fit: cover;
 }
 
-/* .title-c {
-    padding: 30px 0 20px;
-} */
+
 
 .icons {
     width: 25px;
@@ -88,17 +89,14 @@ footer {
 }
 
 
-/* .logo-w {
-    fill: #fff;
-} */
-
 /* Sections */
 section {
     padding-top: 8%;
     padding-bottom: 8%;
 }
+
 .why-easy {
-    background-color:#f4f5f7;
+    background-color: #f4f5f7;
     z-index: -10;
 }
 
@@ -112,7 +110,7 @@ section {
 
 /* Cards */
 .card {
-    margin-top:50px;
+    margin-top: 50px;
     border: none;
 }
 
@@ -127,7 +125,8 @@ section {
 }
 
 .footer-item {
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
+    ;
 }
 
 p.copyright {
@@ -135,21 +134,59 @@ p.copyright {
     padding-top: 30px;
     font-size: 0.8rem;
 }
+
 .attribution {
-     font-size: 11px; 
-     text-align: center; 
-     background-color: #f4f5f7;
-    }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+    font-size: 11px;
+    text-align: center;
+    background-color: #f4f5f7;
 }
 
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
-   
-@media (min-width: 576px) { 
+/* 560 - 750 */
+
+@media (max-width: 576px) {
 
     body {
         overflow-x: hidden;
     }
- 
- }
+
+    section {
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+
+
+    /*  kad je img-fluid*/
+    .ill1 {
+        left: -50%;
+        top: -30%;
+        width: 190%;
+        z-index: -1;
+        height: auto;
+    }
+
+    /* 
+    .ill1 {
+    left: -30%;
+    top: -30%;
+    width: 200%;
+    z-index: -1;
+    margin: 0;
+    overflow-x: hidden;
+    } */
+
+    .ill2 {
+        right: 0;
+        top: -12%;
+        width: auto;
+    }
+
+    .intro {
+        margin-top: 100%;
+    }
+
+
+}
